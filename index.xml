@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Academic</title>
-    <link>https://example.com/</link>
-      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/</link>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Academic</title>
-      <link>https://example.com/</link>
+      <link>http://localhost:1313/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://example.com/talk/example-talk/</link>
+      <link>http://localhost:1313/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://example.com/talk/example-talk/</guid>
+      <guid>http://localhost:1313/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,9 +34,9 @@
     
     <item>
       <title>Blog with Jupyter Notebooks!</title>
-      <link>https://example.com/post/blog-with-jupyter/</link>
+      <link>http://localhost:1313/post/blog-with-jupyter/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/blog-with-jupyter/</guid>
+      <guid>http://localhost:1313/post/blog-with-jupyter/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;IPython.core.display&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -61,7 +61,7 @@
                /post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_5a714abab5f53c70f7c38e19755638d3.webp 400w,
                /post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_6b76da17c04a40aee4c1c633206f8065.webp 760w,
                /post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://example.com/post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_5a714abab5f53c70f7c38e19755638d3.webp&#34;
+               src=&#34;http://localhost:1313/post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_5a714abab5f53c70f7c38e19755638d3.webp&#34;
                width=&#34;601&#34;
                height=&#34;203&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -80,10 +80,130 @@
     </item>
     
     <item>
+      <title>Управление версиями. Git</title>
+      <link>http://localhost:1313/post/git/</link>
+      <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/git/</guid>
+      <description>&lt;p&gt;Управление версиями является неотъемлемой частью разработки программного обеспечения. Это процесс отслеживания изменений в коде, координации работы нескольких разработчиков и восстановления предыдущих версий проекта при необходимости. Одним из наиболее популярных инструментов управления версиями является Git. В этом блоге мы рассмотрим основы работы с Git и его практические аспекты.&lt;/p&gt;
+&lt;h3 id=&#34;что-такое-git&#34;&gt;Что такое Git?&lt;/h3&gt;
+&lt;p&gt;Git - это распределенная система управления версиями, разработанная Линусом Торвальдсом. Она позволяет разработчикам эффективно управлять изменениями в коде, создавать отдельные ветки разработки, сливать их и отслеживать историю изменений проекта.&lt;/p&gt;
+&lt;h3 id=&#34;основные-принципы-git&#34;&gt;Основные принципы Git:&lt;/h3&gt;
+&lt;p&gt;Репозиторий (Repository): Git хранит все данные проекта в специальном хранилище, называемом репозиторием. Репозиторий содержит всю историю изменений проекта, включая файлы, коммиты и ветки.&lt;/p&gt;
+&lt;p&gt;Коммиты (Commits): Коммиты представляют собой снимки состояния проекта в определенный момент времени. Каждый коммит содержит информацию о внесенных изменениях и авторе.&lt;/p&gt;
+&lt;p&gt;Ветвление (Branching): Ветвление позволяет создавать отдельные ветки разработки, в которых можно вносить изменения независимо от основной ветки (обычно это ветка master). Это помогает изолировать новые функции или исправления от основного кода проекта.&lt;/p&gt;
+&lt;p&gt;Слияние (Merging): После завершения работы над новой функциональностью или исправлением ошибок изменения из отдельной ветки могут быть объединены с основной веткой через процесс, называемый слиянием. Это позволяет интегрировать изменения из разных веток в основной код проекта.&lt;/p&gt;
+&lt;p&gt;Откат (Rollback): Git позволяет возвращаться к предыдущим состояниям проекта, если возникла необходимость отмены изменений или восстановления предыдущих версий.&lt;/p&gt;
+&lt;h3 id=&#34;польза-от-использования-git&#34;&gt;Польза от использования Git:&lt;/h3&gt;
+&lt;p&gt;Удобство совместной работы над проектом для команды разработчиков. Git обеспечивает механизмы для совместного редактирования кода, отслеживания изменений и разрешения конфликтов.&lt;/p&gt;
+&lt;p&gt;Отслеживание истории изменений, что упрощает поиск и исправление ошибок. Благодаря Git разработчики могут легко вернуться к предыдущим версиям кода и изучить историю изменений для поиска причин возникновения проблем.&lt;/p&gt;
+&lt;p&gt;Возможность экспериментировать с новыми функциями, не повреждая основной код. Git позволяет создавать отдельные ветки для разработки новых функций или экспериментальных изменений, которые могут быть интегрированы в основной код проекта после успешного тестирования.&lt;/p&gt;
+&lt;p&gt;Быстрое восстановление предыдущих версий проекта. В случае необходимости разработчики могут легко вернуться к предыдущим версиям проекта с помощью Git, что обеспечивает безопасность и надежность процесса разработки.&lt;/p&gt;
+&lt;h3 id=&#34;заключение&#34;&gt;Заключение&lt;/h3&gt;
+&lt;p&gt;Git является мощным инструментом управления версиями, который существенно облегчает процесс разработки программного обеспечения. Понимание его ключевых принципов и основных команд позволяет разработчикам эффективно управлять версиями своих проектов и сделать их более надежными и устойчивыми. Важно отметить, что использование Git требует практики и опыта, но его основные принципы легко понять и использовать в повседневной разработке.&lt;/p&gt;
+&lt;h3 id=&#34;с-наилучшими-пожеланиями-александр-&#34;&gt;С наилучшими пожеланиями, Александр 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/post/markdown/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/markdown/</guid>
+      <description>&lt;p&gt;Markdown — удобочитаемый язык разметки, который прозрачно конвертируется в HTML. Его можно открывать и изменять в любом редакторе текста. Широко используется для написания документаций и README-файлов.&lt;/p&gt;
+&lt;p&gt;Вы можете встретить Markdown в .md или .markdown файлах. Давайте посмотрим на пример одного из таких:&lt;/p&gt;
+&lt;h1 id=&#34;дока&#34;&gt;Дока&lt;/h1&gt;
+&lt;p&gt;Дока — это &lt;strong&gt;добрая&lt;/strong&gt; энциклопедия для веб-разработчиков.
+Вы можете &lt;a href=&#34;https://doka.guide&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;открыть её&lt;/a&gt; в своём браузере.&lt;/p&gt;
+&lt;h2 id=&#34;преимущества&#34;&gt;Преимущества&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Понятный материал;&lt;/li&gt;
+&lt;li&gt;Нескучные объяснения;&lt;/li&gt;
+&lt;li&gt;Удобный поиск.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Он содержит базовые элементы, которые можно найти почти в любом README.md:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;заголовок первого уровня для названия;
+выделение жирным шрифтом важных частей в описании;
+ссылка с понятным текстом;
+заголовок второго уровня для подпунктов;
+маркированный список для перечисления преимуществ.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Несмотря на то, что Markdown достаточно удобно читать в исходном виде, его часто переводят в HTML. Результат конвертации находится ниже.&lt;/p&gt;
+&lt;h1 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h1&gt;
+&lt;h2 id=&#34;параграф&#34;&gt;Параграф&lt;/h2&gt;
+&lt;p&gt;Параграф — это одна или несколько подряд идущих строчек текста, отделённых одной или несколькими пустыми строчками. Если строка содержит только пробелы или табы, то она всё равно считается пустой.&lt;/p&gt;
+&lt;p&gt;Подряд идущие строчки будут склеены в одну, если не добавить жёсткий перенос. Существует несколько способов, как это можно сделать:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;добавить два (или больше) пробелов в конце строки &amp;lt;пробел&amp;gt;&amp;lt;пробел&amp;gt;;
+добавить обратную косую черту в конце строки \;
+добавить HTML-тег переноса строки &amp;lt;br&amp;gt;.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Привет,
+мир!&lt;/p&gt;
+&lt;p&gt;Привет,&amp;lt;пробел&amp;gt;&amp;lt;пробел&amp;gt;
+пробел!&lt;/p&gt;
+&lt;p&gt;Привет,&lt;br&gt;
+косая черта!&lt;/p&gt;
+&lt;p&gt;Привет,&lt;br&gt;
+тег бр-р-р!&lt;/p&gt;
+&lt;p&gt;Markdown предлагает два стиля написания заголовков: через решётки и через подчёркивания. Можно использовать до шести уровней заголовков, но подчёркивания позволяют создавать только первые два.
+🤓&lt;/p&gt;
+&lt;p&gt;В англоязычных источниках для обозначения стилей написания заголовков используются термины Atx-style (для решёток) и Setext-style (для подчёркиваний).
+Решётки (Atx-style)&lt;/p&gt;
+&lt;p&gt;Для того чтобы выделить заголовок, необходимо поставить от 1 до 6 решёток и пробел в самом начале строки. Уровень заголовка зависит только от количества решёток.&lt;/p&gt;
+&lt;h1 id=&#34;заголовок-1-уровня&#34;&gt;Заголовок 1 уровня&lt;/h1&gt;
+&lt;h2 id=&#34;заголовок-2-уровня&#34;&gt;Заголовок 2 уровня&lt;/h2&gt;
+&lt;h3 id=&#34;заголовок-3-уровня&#34;&gt;Заголовок 3 уровня&lt;/h3&gt;
+&lt;h4 id=&#34;заголовок-4-уровня&#34;&gt;Заголовок 4 уровня&lt;/h4&gt;
+&lt;h5 id=&#34;заголовок-5-уровня&#34;&gt;Заголовок 5 уровня&lt;/h5&gt;
+&lt;h6 id=&#34;заголовок-6-уровня&#34;&gt;Заголовок 6 уровня&lt;/h6&gt;
+&lt;h3 id=&#34;с-наилучшими-пожеланиями-александр-&#34;&gt;С наилучшими пожеланиями, Александр 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Блог о событиях за прошедшую неделю</title>
+      <link>http://localhost:1313/post/previous-week/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/previous-week/</guid>
+      <description>&lt;p&gt;Приветствую всех читателей блога! Давайте вместе вспомним самые интересные события, произошедшие за последние семь дней.&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;h3 id=&#34;искусственный-интеллекта&#34;&gt;Искусственный интеллекта&lt;/h3&gt;
+&lt;p&gt;Прошедшая неделя была богата на новости в области искусственного интеллекта. Исследователи из Массачусетса в Кембридже объявили о создании новой модели глубокого обучения, которая показывает потенциал в решении сложных задач распознавания изображений. Эта модель обещает значительные прорывы в сфере компьютерного зрения.&lt;/p&gt;
+&lt;h3 id=&#34;запуск-нового-космического-аппарата&#34;&gt;Запуск нового космического аппарата&lt;/h3&gt;
+&lt;p&gt;В прошедшую среду состоялся успешный запуск нового космического аппарата ЛунаРей. Этот аппарат предназначен для изучения лунной поверхности. Запуск прошел без каких-либо инцидентов, и теперь аппарат отправлен на свою орбиту для выполнения своих задач.&lt;/p&gt;
+&lt;h3 id=&#34;открытие-нового-центра-исследований-в-области-кибербезопасности&#34;&gt;Открытие нового центра исследований в области кибербезопасности&lt;/h3&gt;
+&lt;p&gt;В пятницу открылся новый центр исследований в области кибербезопасности Цифровой Щит. Этот центр ставит своей целью разработку новых методов обнаружения и борьбы с киберугрозами. Он обещает стать ключевым игроком в борьбе с киберугрозами и разработке инновационных методов защиты в сетевой сфере.&lt;/p&gt;
+&lt;h3 id=&#34;завершение-глобальной-онлайн-конференции&#34;&gt;Завершение глобальной онлайн-конференции&lt;/h3&gt;
+&lt;p&gt;На этой неделе завершилась глобальная онлайн-конференция &amp;ldquo;Исскуственный интеллект: Новые горизонты&amp;rdquo;, посвященная теме &amp;ldquo;Будущее автономных систем&amp;rdquo;. Конференция собрала ведущих специалистов из разных стран для обсуждения актуальных вопросов и перспективных направлений развития в данной области.&lt;/p&gt;
+&lt;p&gt;Это были только некоторые из ключевых событий, произошедших за прошедшую неделю. Следите за обновлениями блога, чтобы быть в курсе последних новостей и тенденций в мире технологий и науки.&lt;/p&gt;
+&lt;h3 id=&#34;с-наилучшими-пожеланиями-александр--&#34;&gt;С наилучшими пожеланиями, Александр  🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Блог о событиях за прошедшую неделю (2)</title>
+      <link>http://localhost:1313/post/previous-week-2/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/previous-week-2/</guid>
+      <description>&lt;h3 id=&#34;контрольные-работы&#34;&gt;Контрольные работы&lt;/h3&gt;
+&lt;p&gt;Были написаны контрольные работы по следующим предметам:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Аналитическая геометрия&lt;/li&gt;
+&lt;li&gt;Дискретная математика&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;компьютерная-архитектура&#34;&gt;Компьютерная архитектура&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Была сдана 3 часть самостоятельного проекта&lt;/li&gt;
+&lt;li&gt;Была сдана 9 лабораторная работа&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;с-наилучшими-пожеланиями-александр--&#34;&gt;С наилучшими пожеланиями, Александр  🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Welcome to Hugo Blox Builder, the website builder for Hugo</title>
-      <link>https://example.com/post/getting-started/</link>
+      <link>http://localhost:1313/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/getting-started/</guid>
+      <guid>http://localhost:1313/post/getting-started/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
@@ -161,9 +281,9 @@
     
     <item>
       <title>Writing technical content in Markdown</title>
-      <link>https://example.com/post/writing-technical-content/</link>
+      <link>http://localhost:1313/post/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/writing-technical-content/</guid>
+      <guid>http://localhost:1313/post/writing-technical-content/</guid>
       <description>&lt;p&gt;Hugo Blox Builder is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p&gt;
@@ -263,7 +383,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-427853691&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-462785139&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -273,7 +393,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-427853691&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-462785139&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -555,9 +675,9 @@ Crash --&gt; [*]
     
     <item>
       <title>An example preprint / working paper</title>
-      <link>https://example.com/publication/preprint/</link>
+      <link>http://localhost:1313/publication/preprint/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/preprint/</guid>
+      <guid>http://localhost:1313/publication/preprint/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
@@ -569,9 +689,9 @@ Crash --&gt; [*]
     
     <item>
       <title>Slides</title>
-      <link>https://example.com/slides/example/</link>
+      <link>http://localhost:1313/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/slides/example/</guid>
+      <guid>http://localhost:1313/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-hugo-blox-builder&#34;&gt;Create slides in Markdown with Hugo Blox Builder&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://hugoblox.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Blox Builder&lt;/a&gt; | &lt;a href=&#34;https://docs.hugoblox.com/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -694,9 +814,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>Example Project</title>
-      <link>https://example.com/project/example/</link>
+      <link>http://localhost:1313/project/example/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/</guid>
+      <guid>http://localhost:1313/project/example/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -707,17 +827,17 @@ $$&lt;/p&gt;
     
     <item>
       <title>External Project</title>
-      <link>https://example.com/project/external-project/</link>
+      <link>http://localhost:1313/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/external-project/</guid>
+      <guid>http://localhost:1313/project/external-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An example journal article</title>
-      <link>https://example.com/publication/journal-article/</link>
+      <link>http://localhost:1313/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/journal-article/</guid>
+      <guid>http://localhost:1313/publication/journal-article/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -734,9 +854,9 @@ $$&lt;/p&gt;
     
     <item>
       <title>An example conference paper</title>
-      <link>https://example.com/publication/conference-paper/</link>
+      <link>http://localhost:1313/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/conference-paper/</guid>
+      <guid>http://localhost:1313/publication/conference-paper/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
