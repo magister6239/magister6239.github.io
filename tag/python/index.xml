@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python | Academic</title>
+    <link>http://localhost:1313/tag/python/</link>
+      <atom:link href="http://localhost:1313/tag/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>Python</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Python</title>
+      <link>http://localhost:1313/tag/python/</link>
+    </image>
+    
+    <item>
+      <title>Nitshe game</title>
+      <link>http://localhost:1313/project/nitshe-game/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/nitshe-game/</guid>
+      <description>&lt;p&gt;A simple Python game on the theme of the philosopher Friedrich Nietzsche. The software architecture is very bad (there is none), and therefore the code is terrible. The game was made as a philosophy project because code purity was not important.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Discord bot</title>
+      <link>http://localhost:1313/project/discord-bot/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/discord-bot/</guid>
+      <description>&lt;p&gt;A simple bot written in python as an experiment. It has little functionality, but it can do things that other bots can’t.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

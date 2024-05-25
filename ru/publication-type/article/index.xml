@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Article | Academic</title>
+    <link>http://localhost:1313/ru/publication-type/article/</link>
+      <atom:link href="http://localhost:1313/ru/publication-type/article/index.xml" rel="self" type="application/rss+xml" />
+    <description>Article</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ru</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Article</title>
+      <link>http://localhost:1313/ru/publication-type/article/</link>
+    </image>
+    
+    <item>
+      <title>«Пример препринта / рабочего документа»</title>
+      <link>http://localhost:1313/ru/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ru/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Создайте слайды в Markdown — нажмите кнопку &lt;em&gt;Слайды&lt;/em&gt;, чтобы просмотреть пример.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Добавьте сюда &lt;strong&gt;полный текст&lt;/strong&gt; или &lt;strong&gt;дополнительные примечания&lt;/strong&gt; публикации. Вы можете использовать расширенное форматирование, например [код, математические вычисления и изображения] (&lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.hugoblox.com/content/writing-markdown-latex/)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

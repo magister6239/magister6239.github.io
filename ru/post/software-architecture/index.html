@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: 25 мая 2024 г. --><html lang="ru" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Александр" />
+
+
+
+
+
+  
+
+<meta name="description" content="Для чего нужна архитектура ПО Программная архитектура — это фундамент разработки IT-продукта. Разработчики пишут код для создания программы. Строки объединяются в функции, функции объединяются в классы, классы — в модули. Как итог — готовая программа." />
+
+
+
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/post/software-architecture/" />
+
+<link rel="alternate" hreflang="ru" href="http://localhost:1313/ru/post/software-architecture/" />
+<link rel="canonical" href="http://localhost:1313/ru/post/software-architecture/" />
+
+
+
+  <link rel="manifest" href="/ru/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="http://localhost:1313/ru/post/software-architecture/featured.jpg" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Academic" />
+<meta property="og:url" content="http://localhost:1313/ru/post/software-architecture/" />
+<meta property="og:title" content="Архитектура программного обеспечения | Academic" />
+<meta property="og:description" content="Для чего нужна архитектура ПО Программная архитектура — это фундамент разработки IT-продукта. Разработчики пишут код для создания программы. Строки объединяются в функции, функции объединяются в классы, классы — в модули. Как итог — готовая программа." /><meta property="og:image" content="http://localhost:1313/ru/post/software-architecture/featured.jpg" /><meta property="og:locale" content="ru" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-05-25T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-05-25T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/ru/post/software-architecture/"
+  },
+  "headline": "Архитектура программного обеспечения",
+  
+  "image": [
+    "http://localhost:1313/ru/post/software-architecture/featured.jpg"
+  ],
+  
+  "datePublished": "2023-05-25T00:00:00Z",
+  "dateModified": "2023-05-25T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Александр"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Для чего нужна архитектура ПО Программная архитектура — это фундамент разработки IT-продукта. Разработчики пишут код для создания программы. Строки объединяются в функции, функции объединяются в классы, классы — в модули. Как итог — готовая программа."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Архитектура программного обеспечения | Academic</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c3d333050fc8205de8b087e53caaeb24" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Поиск</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Поиск ..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Поиск ...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/ru/">Academic</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Переключить навигацию">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/ru/">Academic</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#about"><span>Главная</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#posts"><span>Посты</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#projects"><span>Проекты</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#talks"><span>Темы</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#featured"><span>Публикации</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ru/#contact"><span>Контакты</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Поиск"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#" class="nav-link " data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Languages">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>Русский</span>
+            </div>
+            
+            <a class="dropdown-item" href="http://localhost:1313/post/software-architecture/">
+              <span>English</span>
+            </a>
+            
+          </div>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Архитектура программного обеспечения</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    мая 25, 2023
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 мин. для прочтения
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 800px; max-height: 444px;">
+  <div style="position: relative">
+    <img src="/ru/post/software-architecture/featured_hu1ecd22abccdff78dd5957de4da098924_207551_98b40988ac69872b4b6d1ce31dd3b400.webp" width="800" height="444" alt="" class="featured-image">
+    <span class="article-header-caption">Image credit: <a href="https://unsplash.com/photos/OGZtQF8iC0g" target="_blank" rel="noopener"><strong>John Moeses Bauan</strong></a></span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h3 id="для-чего-нужна-архитектура-по">Для чего нужна архитектура ПО</h3>
+<p>Программная архитектура — это фундамент разработки IT-продукта. Разработчики пишут код для создания программы. Строки объединяются в функции, функции объединяются в классы, классы — в модули. Как итог — готовая программа.</p>
+<p>Для сокращения срока создания сложного продукта разработчики в начале работы создают общий план будущего ПО с главными блоками и способами их соединения. После они его детализируют, прорабатывая требования и характеристики. Так получается информация для построения компонентов ПО.</p>
+<p>Во-первых, благодаря управляемости архитектор использует отдельные компоненты и модули, отвечающие за отдельные функции, чтобы организовать разработку ПО и поддержку.</p>
+<p>Также четкая архитектура программного продукта помогает легко его поддерживать. Даже если разработчики не знакомы с деталями системы, они смогут быстро и легко сориентироваться в коде, что упрощает работу команды.</p>
+<p>С помощью архитектуры ПО можно легко дорабатывать, расширять и масштабировать проект. Быстро добавлять новые элементы, увеличивать функциональность и производительность, эффективно использовать ресурсы.</p>
+<p>Архитектура программных средств, в том числе монолитная, обеспечивает повторное использование. Компоненты используются несколько раз в разных частях системы. Главное преимущество — уменьшить количество ошибок и сократить время разработки. Также она включает в себя меры безопасности для обеспечения защиты.</p>
+<p>Основные принципы архитектуры ПО</p>
+<h3 id="принципы-которые-учитываются-при-проектировании">Принципы, которые учитываются при проектировании.</h3>
+<ul>
+<li>Гибкость. Строить не на годы, а с возможностью внесения изменений. Учитывайте, как программа может измениться, чтобы отвечать современным требованиям, и добавьте гибкость, чтобы легко поддерживать изменения.</li>
+<li>Открытость/закрытость. Программные сущности закрыты для модификации, открыты для расширения.</li>
+<li>Снижение риска и модель для анализа. Важно использовать такие инструменты, как UML, чтобы регистрировать требования и проектные решения. Не стоит формализировать модель так, чтобы было невозможно легко адаптировать и повторить дизайн.</li>
+<li>Устойчивость — организация зависимостей от более стабильных компонентов к менее стабильным.</li>
+<li>Единственность — избежание дублирования кода.</li>
+<li>Минимальное знание. Каждый модуль знает только о соседях, чтобы снизить взаимозависимость и повысить изоляцию.</li>
+<li>Разделение ответственности. 1 элемент — 1 причина для изменения (для четкого разделения обязанностей).</li>
+</ul>
+<p>Если следовать этим архитектурным принципам, можно спроектировать расширяемую, гибкую и поддерживаемую систему.</p>
+<h3 id="типы-архитектурных-стилей">Типы архитектурных стилей</h3>
+<p>Архитектурные стили — высокоуровневые стратегии. Представляют собой абстрактную структуру для систем.</p>
+<p>8 главных стилей:</p>
+<ul>
+<li>Многослойный.</li>
+<li>Компонентно-ориентированный.</li>
+<li>Сервисно-ориентированный.</li>
+<li>Распределенная система.</li>
+<li>Предметно-ориентированный.</li>
+<li>«Переводчик».</li>
+<li>Параллелизм.</li>
+<li>Ориентированный на данные.</li>
+</ul>
+<p>Многослойный — самый распространенный. Типичный пример — многоуровневый стиль из 3 слоев: слой представления, бизнес-логика и хранение данных. Плюсы — легкий в понимании, тестировании и поддержке. Минус — появление накладных расходов на производительность.</p>
+<p>Компонентно-ориентированный разделяет функциональность на слои в рамках одной системы, организованной как повторно используемые и слабосвязанные компоненты. Преимущества — гибкость, поддерживаемость, повторное использование. Недостаток — компонентами сложно управлять.</p>
+<p>Сервисно-ориентированный для разработки ПО как набора взаимодействующих сервисов через сеть. Плюсы — слабая связанность, гибкость и возможность повторного использования. Минусы — сложность, сетевая зависимость.</p>
+<p>Распределенная система. Компоненты на сетевых компьютерах передают сообщения для взаимодействия и координирования действий, чтобы достичь цели. Преимущества — общий доступ, устойчивость к ошибкам и сбоям, возможность масштабирования. Недостатки — сложность, сетевая зависимость.</p>
+<p>Предметно-ориентированный — создание программных абстракций (моделей предметных областей). Отличается ограниченными связями, целостностью и взаимосвязью. Минус — требует глубокого понимания и опыта.</p>
+<p>«Переводчик» определяет способы оценки предложений. Для каждого символа создается терминальный или нетерминальный стиль. Отличается большой гибкостью и простой отладкой. Недостаток — требует больше ресурсов.</p>
+<p>В стиле параллелизма несколько независимых задач выполняются в одно и то же время. Параллелизм улучшает производительность, что особенно актуально для многопроцессорных систем. Минус — сложная взаимная блокировка.</p>
+<p>Архитектура, ориентированная на данные. Стиль фокусируется на организации и преобразовании данных. Подходит для больших объемов данных, решения сложных задач. Обеспечивает правильную последовательность данных, целостность и надежность. Среди недостатков — возможные проблемы с масштабируемостью.</p>
+<h3 id="архитектурные-паттерны">Архитектурные паттерны</h3>
+<p>Это предметные и специфичные элементы для конкретного модуля или проблемы. Структурированное решение, которое описывает организацию компонентов и взаимодействий. Паттерны напоминают шаблоны проектирования ПО, но абстрактнее.</p>
+<p>У каждого архитектурного стиля свои паттерны. У многослойного — многослойный паттерн и «Чистая архитектура». Первый разделяет систему на определенное количество слоев, у каждого своя зона ответственности. Паттерн «Чистая архитектура» подчеркивает разделение функциональности в системе, организовывая ПО в концентрические слои, в центральном — предметная область, по кругу — специфичные слои для приложения, внутренние влияют на внешние. Так изменения почти не влияют на бизнес-логику.</p>
+<p>В компонентно-ориентированном стиле 3 паттерна. Объектно-ориентированный паттерн — парадигма с объектами, содержащими данные в виде полей (атрибуты) и код в виде процедур (методы). Облегчает проектирование сложных систем, их реализацию и поддержку. «Микроядро» для отделения микроядра от расширенных специфичных для клиента функций. Так можно легко и быстро расширить систему, не меняя основной код. Паттерн «Плагин» — добавляет новые функции с помощью модулей или плагинов, интегрируя их через стандартный интерфейс для расширения и настройки приложения.</p>
+<p>Паттерны сервисно-ориентированного стиля:</p>
+<ul>
+<li>SOA. Проект ПО как набор отдельных сервисов, которые используются в системах.</li>
+<li>Брокер. Координирует коммуникацию компонентов системы через посредника.</li>
+<li>Микросервисный паттерн для архитектуры. Проект приложения выглядит как набор небольших сервисов. Каждый сервис общается за счет легковесных механизмов, работает в своем процессе.</li>
+<li>Бессерверный паттерн. Приложения создаются и работают без серверов в облачных средах.</li>
+</ul>
+<p>У стиля распределенной системы 2 паттерна:</p>
+<ul>
+<li>Пространство данных. Равномерно распределяет ресурсы и сервисы по серверам, что позволяет избегать единой точки отказа.</li>
+<li>Одноранговая сеть. Здесь каждый участник действует как клиент. Узлы и сервис обмениваются данными без центрального сервера.</li>
+</ul>
+<p>Понимая стили и паттерны, специалист сможет проектировать надежные, масштабируемые и поддерживаемые системы.</p>
+<h3 id="с-наилучшими-пожеланиями-александр-">С наилучшими пожеланиями, Александр 🙌</h3>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fru%2Fpost%2Fsoftware-architecture%2F&amp;text=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0&#43;%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE&#43;%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fru%2Fpost%2Fsoftware-architecture%2F&amp;t=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0&#43;%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE&#43;%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fru%2Fpost%2Fsoftware-architecture%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fru%2Fpost%2Fsoftware-architecture%2F&amp;title=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0&#43;%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE&#43;%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0&#43;%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE&#43;%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%20http%3A%2F%2Flocalhost%3A1313%2Fru%2Fpost%2Fsoftware-architecture%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fru%2Fpost%2Fsoftware-architecture%2F&amp;title=%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0&#43;%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE&#43;%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/ru/authors/admin/avatar_hu62a2cb0fd05e45d451728a4f28f9b3ab_86526_270x270_fill_q75_lanczos_center.jpg" alt="Александр"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">Александр</a></h5>
+      <h6 class="card-subtitle">Студент РУДН</h6>
+      <p class="card-text">Студент курса компьютерных наук.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/ru/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://elibrary.ru/defaultx.asp" target="_blank" rel="noopener">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.mendeley.com/search/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.academia.edu/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://arxiv.org/" target="_blank" rel="noopener">
+        <i class="fab fa-arxiv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/magister6239" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/ru/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Процитировать</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Копия
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Скачать
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

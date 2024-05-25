@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: May 25, 2024 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Alexander" />
+
+
+
+
+
+  
+
+<meta name="description" content="Alexander Nozik, physicist and programmer, head of the Nuclear Physics Methods Laboratory at JetBrains Research, deputy head of the Laboratory of Methods of Nuclear Physics Experiments and master&rsquo;s program at MIPT - about how to transfer scientific code to a modern stack and why it is difficult to introduce new tools into science." />
+
+
+
+  <link rel="alternate" hreflang="ru" href="http://localhost:1313/ru/post/scintific-programing-languages/" />
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/scintific-programing-languages/" />
+<link rel="canonical" href="http://localhost:1313/post/scintific-programing-languages/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@GetResearchDev" />
+  <meta property="twitter:creator" content="@GetResearchDev" />
+<meta property="twitter:image" content="http://localhost:1313/post/scintific-programing-languages/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Academic" />
+<meta property="og:url" content="http://localhost:1313/post/scintific-programing-languages/" />
+<meta property="og:title" content="Scientific programming languages | Academic" />
+<meta property="og:description" content="Alexander Nozik, physicist and programmer, head of the Nuclear Physics Methods Laboratory at JetBrains Research, deputy head of the Laboratory of Methods of Nuclear Physics Experiments and master&rsquo;s program at MIPT - about how to transfer scientific code to a modern stack and why it is difficult to introduce new tools into science." /><meta property="og:image" content="http://localhost:1313/post/scintific-programing-languages/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2024-05-07T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2024-05-07T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/post/scintific-programing-languages/"
+  },
+  "headline": "Scientific programming languages",
+  
+  "image": [
+    "http://localhost:1313/post/scintific-programing-languages/featured.png"
+  ],
+  
+  "datePublished": "2024-05-07T00:00:00Z",
+  "dateModified": "2024-05-07T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Alexander"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Alexander Nozik, physicist and programmer, head of the Nuclear Physics Methods Laboratory at JetBrains Research, deputy head of the Laboratory of Methods of Nuclear Physics Experiments and master\u0026rsquo;s program at MIPT - about how to transfer scientific code to a modern stack and why it is difficult to introduce new tools into science."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Scientific programming languages | Academic</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3351191163b6d09faf644cf4547a9651" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Academic</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Academic</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#" class="nav-link " data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Languages">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>English</span>
+            </div>
+            
+            <a class="dropdown-item" href="http://localhost:1313/ru/post/scintific-programing-languages/">
+              <span>Русский</span>
+            </a>
+            
+          </div>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Scientific programming languages</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    May 7, 2024
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header container featured-image-wrapper mt-4 mb-4" style="max-width: 294px; max-height: 171px;">
+  <div style="position: relative">
+    <img src="/post/scintific-programing-languages/featured_hubf9a1c0010f2d28774905f2a9e3a5d39_8021_1d6e6a8c11b4f7fcddca17b4937508de.webp" width="294" height="171" alt="" class="featured-image">
+    <span class="article-header-caption">Image credit: <a href="https://unsplash.com/photos/OGZtQF8iC0g" target="_blank" rel="noopener"><strong>John Moeses Bauan</strong></a></span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Alexander Nozik, physicist and programmer, head of the Nuclear Physics Methods Laboratory at JetBrains Research, deputy head of the Laboratory of Methods of Nuclear Physics Experiments and master&rsquo;s program at MIPT - about how to transfer scientific code to a modern stack and why it is difficult to introduce new tools into science. This article is based on a December 2021 episode of Skillbox&rsquo;s People and Code podcast.</p>
+<h3 id="-alexander-tell-us-what-you-do-and-what-problems-you-solve">— Alexander, tell us what you do and what problems you solve?</h3>
+<p>— My main place of work is the Moscow Institute of Physics and Technology (MIPT), also known as Phystech. In addition, I work at the Institute of Nuclear Research of the Russian Academy of Sciences and JetBrains Research - this is a community of laboratories associated with JetBrains. The company supports laboratories and thus gathers the scientific community around itself.</p>
+<p>I am engaged in neutrino physics, this is the main direction of my scientific activity. But in recent years I have been developing more software and libraries for scientific research.</p>
+<h3 id="-how-does-science-differ-from-commercial-development-in-terms-of-tasks-how-does-this-affect-the-choice-of-tools-and-programming-languages">— How does science differ from commercial development in terms of tasks? How does this affect the choice of tools and programming languages?</h3>
+<p>— Science has always been and remains “faster, higher, stronger” than other spheres. Scientists often solve the same problems as in commercial development, but on a much larger scale. Let&rsquo;s remember the Internet protocol HTTP: it was originally created so that scientific centers could exchange large amounts of data. In one of the corridors of CERN there is even a sign: “The Internet was invented in this room.”</p>
+<p>In particle acceleration experiments at the Large Hadron Collider, if memory serves, 25 GB of data are generated per minute. For commercial projects this is simply incomprehensible. We work with volumes of data that are not available anywhere else.</p>
+<p>Data analysis and so-called Data Science have already become part of the industry. “So-called” because there is still no clear definition of what kind of science this is. Nevertheless, all the methodology and new tools are developed by scientists, because only they can operate with complex mathematical models.</p>
+<p>An important feature of science is that there are very few professional programmers in it. Therefore, the tools that scientists use must not only be the most flexible and fastest, but also simple. Otherwise, non-programmer scientists will create such a thing that no one will be able to figure it out later. Actually, something similar has already happened in physics, and now the scientific community is solving this problem.</p>
+<p>The fact is that physicists write computational code in C++, and then wrap it in Python code. And it seems to me that this approach has outlived its usefulness: in Python it is very difficult to maintain a large code base, and here the size of projects is growing precisely on the side of the users of the code - scientists. Therefore, such systems are slowly falling apart and over the past five years, engineers and scientists have been looking for more flexible and simpler alternatives.</p>
+<h3 id="-do-other-sciences-use-the-same-combination-of-languages">— Do other sciences use the same combination of languages?</h3>
+<p>— Yes, it’s about the same everywhere, but with a slight difference. For example, bioinformatics as a separate field has emerged relatively recently. Unlike physicists who had to “switch” to Python, they immediately began working in modern languages. But most sciences still use C, Fortran and C++ libraries, and write a Python add-on on top of them. And now there are the same problems with flexibility.</p>
+<p>In addition to Python, in various fields of science they write or have tried to write in other languages.</p>
+<p>R. It is used in statistics. It is a highly specialized language that is great for solving statistical problems. But often we need not only to receive data, but also to create a web service so that the user has access to this data. Writing it in R is not easy.</p>
+<p>Julia This is quite an interesting language with many design features. Try it if you lack speed or flexibility in Python. However, Julia also has a drawback: its set of tools is still unstable.</p>
+<p>Julia придумали как альтернативу Python и MATLAB. Последний до сих пор используют, но это проприетарная, «неживая» система. Как только вы выходите за рамки привычных задач, то сразу ощущаете его ограниченность.</p>
+<p>Julia was invented as an alternative to Python and MATLAB. The latter is still used, but it is a proprietary, “non-living” system. As soon as you go beyond your usual tasks, you immediately feel its limitations.</p>
+<p>Swift. They also tried to make Swift a universal language, but it never went beyond iOS. And then Kotlin appeared, which in syntax is very similar to Swift, but at the same time is suitable for solving a wider range of problems and allows you to work with libraries from Java, JavaScript and C.</p>
+<p>Java. I used to program in Java - it&rsquo;s a cool language that is often unfairly criticized. It was created for the enterprise, so there is an overly drawn-out “ceremony”: to build a simple application, you need to write a lot of additional code. Yes, this simplifies support and increases the stability of the application, but it greatly complicates the programming process itself.</p>
+<p>Kotlin. Now I write a lot in Kotlin. It has the advantages of Java, but relieves the programmer of a good half of the “ceremonies”, and therefore, in my opinion, it has great prospects.
+What are the main problems in scientific IT and how are they trying to solve them?</p>
+<h3 id="-you-mentioned-that-there-was-a-lot-of-fancy-stuff-in-science-i-wonder-if-this-only-applies-to-fortran-and-c-libraries-or-something-else-and-what-are-the-main-problems-there">— You mentioned that there was a lot of fancy stuff in science. I wonder if this only applies to Fortran and C++ libraries or something else? And what are the main problems there?</h3>
+<p>“This is a very big problem that we will have to sort out for a long time.” The fact is that one day development turned into a separate professional field. 40 years ago, when programming was just in its infancy, physicists were the coolest programmers. They worked on huge machines the size of a closet, and everyone understood everything. But 15–20 years ago it turned out that software engineering is an independent engineering field.</p>
+<p>Scientists fell far behind because they continued to develop software in the same style in which they did it on the antediluvian mainframes. They came up with wonderful algorithms, but did not think at all about code support, testing, CI/CD, and especially about architecture.</p>
+<p>For example, data collection systems are completely unable to interact with each other. They were written by different programmers, who sometimes specifically made it so that the systems could not communicate with each other. If two experiments are performed on different systems, then the scientist will have to process their results separately. Moreover, it can take several years to study each system - they are so complex.</p>
+<p>Due to the fact that science did not implement modern approaches to software design and did not use new tools, we have accumulated millions of legacy lines. There you can find good and even brilliant algorithms, but it will be almost impossible to understand them. To feel the pain, find a Fortran 77 program and try to understand what&rsquo;s going on there.</p>
+<h4 id="for-reference-in-fortran-77-variable-name-length-is-limited-to-eight-characters-this-means-that-when-all-matching-variable-names-run-out-the-program-becomes-unreadable-number-letter-identifiers-are-used-with-which-the-code-only-becomes-more-confusing-but-most-programs-in-science-are-still-written-in-fortran">For reference: in Fortran 77, variable name length is limited to eight characters. This means that when all matching variable names run out, the program becomes unreadable. Number-letter identifiers are used, with which the code only becomes more confusing. But most programs in science are still written in Fortran.</h4>
+<p>Relatively recently, scientists realized that they need to invest in software engineering, pay attention to architecture and master modern tools, and not fence their bicycles. To my surprise, over the past two years, many groups of engineers have emerged that are purposefully promoting the modern approach in science.</p>
+<h3 id="best-wishes-alexander-">Best wishes, Alexander 🙌</h3>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fscintific-programing-languages%2F&amp;text=Scientific&#43;programming&#43;languages" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fscintific-programing-languages%2F&amp;t=Scientific&#43;programming&#43;languages" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Scientific%20programming%20languages&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fscintific-programing-languages%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fscintific-programing-languages%2F&amp;title=Scientific&#43;programming&#43;languages" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Scientific&#43;programming&#43;languages%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fscintific-programing-languages%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fscintific-programing-languages%2F&amp;title=Scientific&#43;programming&#43;languages" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu62a2cb0fd05e45d451728a4f28f9b3ab_86526_270x270_fill_q75_lanczos_center.jpg" alt="Alexander"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">Alexander</a></h5>
+      <h6 class="card-subtitle">RUDN student</h6>
+      <p class="card-text">Computer science course student.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://elibrary.ru/defaultx.asp" target="_blank" rel="noopener">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.mendeley.com/search/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.academia.edu/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://arxiv.org/" target="_blank" rel="noopener">
+        <i class="fab fa-arxiv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/magister6239" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

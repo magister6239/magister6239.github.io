@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开源 | Academic</title>
+    <link>http://localhost:1313/ru/tag/%E5%BC%80%E6%BA%90/</link>
+      <atom:link href="http://localhost:1313/ru/tag/%E5%BC%80%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
+    <description>开源</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>ru</language><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>开源</title>
+      <link>http://localhost:1313/ru/tag/%E5%BC%80%E6%BA%90/</link>
+    </image>
+    
+    <item>
+      <title>Добро пожаловать в Hugo Blox Builder, конструктор сайтов для Hugo</title>
+      <link>http://localhost:1313/ru/post/getting-started/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ru/post/getting-started/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;обзор&#34;&gt;Обзор&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Конструктор веб-сайтов Wowchemy для Hugo вместе со своими стартовыми шаблонами предназначен для профессиональных авторов, преподавателей и команд/организаций, хотя его можно использовать для создания сайтов любого типа.&lt;/li&gt;
+&lt;li&gt;Шаблон можно изменить и настроить под свои нужды. Это хорошая платформа для тех, кто хочет взять под контроль свои данные и онлайн-личность, одновременно имея возможность начать с &lt;strong&gt;решения без кода (напишите в Markdown и настройте параметры YAML)&lt;/strong&gt; и &lt;strong&gt;гибкость для дальнейшего использования. добавьте еще более глубокую персонализацию с помощью HTML и CSS&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Вы можете работать со всеми своими любимыми инструментами и приложениями с помощью сотен плагинов и интеграций для ускорения рабочих процессов, взаимодействия с читателями и многого другого.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/main/starters/academic/preview.png&#34; alt=&#34;The template is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;get-started&#34;&gt;Get Started&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;👉 &lt;a href=&#34;https://hugoblox.com/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Создание нового сайта&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📚 &lt;a href=&#34;https://docs.hugoblox.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Персонализация вашего сайта&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Общение с &lt;strong&gt;сообществом Wowchemy&lt;/strong&gt;&lt;/a&gt; или &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;**сообщество Hugo **&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/wowchemy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@wowchemy&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%23MadeWithWowchemy&amp;amp;src=typed_query&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithWowchemy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💡 &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Преложить новую &lt;strong&gt;фишку (функционал)&lt;/strong&gt; или сообщить о &lt;strong&gt;багах&lt;/strong&gt; &lt;em&gt;Wowchemy&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⬆️ &lt;strong&gt;Обновляешь Wowchemy?&lt;/strong&gt; Взгляни сюда &lt;a href=&#34;https://docs.hugoblox.com/hugo-tutorials/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Tutorial&lt;/a&gt; и &lt;a href=&#34;https://hugoblox.com/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;программное-обеспечение-с-открытым-исходным-кодом-финансируемое-за-счет-краудфандинга&#34;&gt;Программное обеспечение с открытым исходным кодом, финансируемое за счет краудфандинга&lt;/h2&gt;
+&lt;p&gt;Чтобы помочь нам устойчиво разрабатывать этот шаблон и программное обеспечение в соответствии с лицензией MIT, мы просим всех частных лиц и предприятия, которые его используют, поддерживать его постоянное обслуживание и развитие посредством спонсорства.&lt;/p&gt;
+&lt;h3 id=&#34;-нажми-здесь-чтобы-стать-спонсором-и-поддержать-будущее-wowchemy-httpshugobloxcomsponsor&#34;&gt;&lt;a href=&#34;https://hugoblox.com/sponsor/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;❤️ Нажми здесь, чтобы стать спонсором и поддержать будущее Wowchemy. ❤️&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;В знак признательности за спонсорство вы можете &lt;strong&gt;разблокировать &lt;a href=&#34;https://hugoblox.com/sponsor/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;эти&lt;/a&gt; потрясающие награды и дополнительные возможности 🦄✨&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;экосистема&#34;&gt;Экосистема&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/GetRD/academic-file-converter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic CLI&lt;/a&gt;:&lt;/strong&gt; автоматически импортировать публикации из BibTeX.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;вдохновение&#34;&gt;Вдохновение&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ознакомьтесь с последней &lt;strong&gt;демо&lt;/strong&gt;&lt;/a&gt; того, что вы получите менее чем за 10 минут, или [просмотрите &lt;strong&gt;презентацию&lt;/strong&gt;](https: //hugoblox.com/user-stories/) личных, проектных и деловых сайтов.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;h2 id=&#34;функции&#34;&gt;Функции&lt;/h2&gt;
+&lt;p&gt;– &lt;strong&gt;Конструктор страниц&lt;/strong&gt; – Создайте &lt;em&gt;что-нибудь&lt;/em&gt; с помощью &lt;a href=&#34;https://docs.hugoblox.com/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;виджетов&lt;/strong&gt;&lt;/a&gt; и [&lt;strong&gt;элементов&lt;/strong&gt;](&lt;a href=&#34;https://docs.hugoblox&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.hugoblox&lt;/a&gt; .com/content/writing-markdown-latex/)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Редактируйте любой тип контента&lt;/strong&gt; - Сообщения в блогах, публикации, выступления, слайды, проекты и многое другое!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Создавайте контент&lt;/strong&gt; в &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, [&lt;strong&gt;Jupyter&lt;/strong&gt;](https://docs. hugoblox.com/import/jupyter/) или &lt;a href=&#34;https://docs.hugoblox.com/install-locally/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Система плагинов&lt;/strong&gt; - Полностью настраиваемые &lt;a href=&#34;https://docs.hugoblox.com/customization/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;цвета&lt;/strong&gt; и &lt;strong&gt;темы шрифтов&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Отображение кода и математических вычислений&lt;/strong&gt;. Поддерживается подсветка кода и &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;математика LaTeX&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Интеграции&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;комментирование Disqus&lt;/a&gt;, карты, контактные формы и многое другое!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Красивый сайт&lt;/strong&gt; - Простой и свежий дизайн одной страницы.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Лидирующее в отрасли SEO&lt;/strong&gt;. Помогите найти свой сайт в поисковых системах и социальных сетях.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Медиа-галереи&lt;/strong&gt;. Показывайте изображения и видео с подписями в настраиваемой галерее.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Удобство для мобильных устройств&lt;/strong&gt;. Ваш сайт будет выглядеть потрясающе на любом экране благодаря версии, оптимизированной для мобильных устройств.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Многоязычность&lt;/strong&gt; - Более 34 языковых пакетов, включая английский, китайский и португальский.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Многопользовательский режим&lt;/strong&gt;. У каждого автора есть собственная страница профиля.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Пакет конфиденциальности&lt;/strong&gt; - Помогает соблюдать GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Выделяйтесь&lt;/strong&gt;. Оживите свой сайт с помощью анимации, параллакса фона и эффектов прокрутки.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Развертывание в один клик&lt;/strong&gt; - Никаких серверов. Никаких баз данных. Только файлы.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;темы&#34;&gt;Темы&lt;/h2&gt;
+&lt;p&gt;Wowchemy и его шаблоны имеют встроенный &lt;strong&gt;автоматический дневной (светлый) и ночной (темный) режимы&lt;/strong&gt;. Кроме того, посетители могут выбрать предпочтительный режим — щелкните значок луны в правом верхнем углу &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Демо&lt;/a&gt;, чтобы увидеть его в действии! Режим «День/ночь» также может быть отключен администратором сайта в файле «params.toml».&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.hugoblox.com/customization&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Выберите потрясающую &lt;strong&gt;тему&lt;/strong&gt; и &lt;strong&gt;шрифт&lt;/strong&gt;&lt;/a&gt; для своего сайта. Темы полностью настраиваемы.&lt;/p&gt;
+&lt;h2 id=&#34;лицензия&#34;&gt;Лицензия&lt;/h2&gt;
+&lt;p&gt;Авторские права принадлежат Джорджу Кушену, 2016 г. (&lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://georgecushen.com&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Выпущено по лицензии &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

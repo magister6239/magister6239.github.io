@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 6, 2024 --><html lang="en-us" >
+<!-- Last Published: May 25, 2024 --><html lang="en-us" >
 
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -282,9 +282,11 @@
 
   
 
-<meta name="description" content="Управление версиями является неотъемлемой частью разработки программного обеспечения. Это процесс отслеживания изменений в коде, координации работы нескольких разработчиков и восстановления предыдущих версий проекта при необходимости. Одним из наиболее популярных инструментов управления версиями является Git." />
+<meta name="description" content="Version control is an integral part of software development. It is the process of tracking code changes, coordinating the work of multiple developers, and restoring previous versions of the project when necessary." />
 
 
+
+  <link rel="alternate" hreflang="ru" href="http://localhost:1313/ru/post/git/" />
 
 <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/git/" />
 <link rel="canonical" href="http://localhost:1313/post/git/" />
@@ -329,8 +331,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Academic" />
 <meta property="og:url" content="http://localhost:1313/post/git/" />
-<meta property="og:title" content="Управление версиями. Git | Academic" />
-<meta property="og:description" content="Управление версиями является неотъемлемой частью разработки программного обеспечения. Это процесс отслеживания изменений в коде, координации работы нескольких разработчиков и восстановления предыдущих версий проекта при необходимости. Одним из наиболее популярных инструментов управления версиями является Git." /><meta property="og:image" content="http://localhost:1313/post/git/featured.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Version control. Git | Academic" />
+<meta property="og:description" content="Version control is an integral part of software development. It is the process of tracking code changes, coordinating the work of multiple developers, and restoring previous versions of the project when necessary." /><meta property="og:image" content="http://localhost:1313/post/git/featured.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -367,7 +369,7 @@
     "@type": "WebPage",
     "@id": "http://localhost:1313/post/git/"
   },
-  "headline": "Управление версиями. Git",
+  "headline": "Version control. Git",
   
   "image": [
     "http://localhost:1313/post/git/featured.png"
@@ -389,7 +391,7 @@
       "url": "http://localhost:1313/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Управление версиями является неотъемлемой частью разработки программного обеспечения. Это процесс отслеживания изменений в коде, координации работы нескольких разработчиков и восстановления предыдущих версий проекта при необходимости. Одним из наиболее популярных инструментов управления версиями является Git."
+  "description": "Version control is an integral part of software development. It is the process of tracking code changes, coordinating the work of multiple developers, and restoring previous versions of the project when necessary."
 }
 </script>
 
@@ -411,7 +413,7 @@
 
 
   
-  <title>Управление версиями. Git | Academic</title>
+  <title>Version control. Git | Academic</title>
 
   
   
@@ -768,13 +770,6 @@
         
         
           
-            
-            <li class="nav-item d-none d-lg-inline-flex">
-              <a class="nav-link" href="https://twitter.com/GeorgeCushen" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
-          
         
 
         
@@ -807,6 +802,22 @@
         
 
         
+        
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#" class="nav-link " data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Languages">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>English</span>
+            </div>
+            
+            <a class="dropdown-item" href="http://localhost:1313/ru/post/git/">
+              <span>Русский</span>
+            </a>
+            
+          </div>
+        </li>
         
 
       </ul>
@@ -854,7 +865,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Управление версиями. Git</h1>
+  <h1>Version control. Git</h1>
 
   
 
@@ -881,7 +892,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    3 min read
   </span>
   
 
@@ -916,23 +927,23 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Управление версиями является неотъемлемой частью разработки программного обеспечения. Это процесс отслеживания изменений в коде, координации работы нескольких разработчиков и восстановления предыдущих версий проекта при необходимости. Одним из наиболее популярных инструментов управления версиями является Git. В этом блоге мы рассмотрим основы работы с Git и его практические аспекты.</p>
-<h3 id="что-такое-git">Что такое Git?</h3>
-<p>Git - это распределенная система управления версиями, разработанная Линусом Торвальдсом. Она позволяет разработчикам эффективно управлять изменениями в коде, создавать отдельные ветки разработки, сливать их и отслеживать историю изменений проекта.</p>
-<h3 id="основные-принципы-git">Основные принципы Git:</h3>
-<p>Репозиторий (Repository): Git хранит все данные проекта в специальном хранилище, называемом репозиторием. Репозиторий содержит всю историю изменений проекта, включая файлы, коммиты и ветки.</p>
-<p>Коммиты (Commits): Коммиты представляют собой снимки состояния проекта в определенный момент времени. Каждый коммит содержит информацию о внесенных изменениях и авторе.</p>
-<p>Ветвление (Branching): Ветвление позволяет создавать отдельные ветки разработки, в которых можно вносить изменения независимо от основной ветки (обычно это ветка master). Это помогает изолировать новые функции или исправления от основного кода проекта.</p>
-<p>Слияние (Merging): После завершения работы над новой функциональностью или исправлением ошибок изменения из отдельной ветки могут быть объединены с основной веткой через процесс, называемый слиянием. Это позволяет интегрировать изменения из разных веток в основной код проекта.</p>
-<p>Откат (Rollback): Git позволяет возвращаться к предыдущим состояниям проекта, если возникла необходимость отмены изменений или восстановления предыдущих версий.</p>
-<h3 id="польза-от-использования-git">Польза от использования Git:</h3>
-<p>Удобство совместной работы над проектом для команды разработчиков. Git обеспечивает механизмы для совместного редактирования кода, отслеживания изменений и разрешения конфликтов.</p>
-<p>Отслеживание истории изменений, что упрощает поиск и исправление ошибок. Благодаря Git разработчики могут легко вернуться к предыдущим версиям кода и изучить историю изменений для поиска причин возникновения проблем.</p>
-<p>Возможность экспериментировать с новыми функциями, не повреждая основной код. Git позволяет создавать отдельные ветки для разработки новых функций или экспериментальных изменений, которые могут быть интегрированы в основной код проекта после успешного тестирования.</p>
-<p>Быстрое восстановление предыдущих версий проекта. В случае необходимости разработчики могут легко вернуться к предыдущим версиям проекта с помощью Git, что обеспечивает безопасность и надежность процесса разработки.</p>
-<h3 id="заключение">Заключение</h3>
-<p>Git является мощным инструментом управления версиями, который существенно облегчает процесс разработки программного обеспечения. Понимание его ключевых принципов и основных команд позволяет разработчикам эффективно управлять версиями своих проектов и сделать их более надежными и устойчивыми. Важно отметить, что использование Git требует практики и опыта, но его основные принципы легко понять и использовать в повседневной разработке.</p>
-<h3 id="с-наилучшими-пожеланиями-александр-">С наилучшими пожеланиями, Александр 🙌</h3>
+      <p>Version control is an integral part of software development. It is the process of tracking code changes, coordinating the work of multiple developers, and restoring previous versions of the project when necessary. One of the most popular version control tools is Git. In this blog, we&rsquo;ll look at the basics of Git and its practical aspects.</p>
+<h3 id="what-is-git">What is Git?</h3>
+<p>Git is a distributed version control system developed by Linus Torvalds. It allows developers to effectively manage changes to the code, create separate development branches, merge them, and track the history of project changes.</p>
+<h3 id="basic-principles-of-git">Basic principles of Git:</h3>
+<p>Repository: Git stores all project data in a special repository called a repository. The repository contains the entire history of changes to the project, including files, commits and branches.</p>
+<p>Commits: Commits are snapshots of the state of a project at a specific point in time. Each commit contains information about the changes made and the author.</p>
+<p>Branching: Branching allows you to create separate development branches in which you can make changes independent of the main branch (usually the master branch). This helps isolate new features or fixes from the main project code.</p>
+<p>Merging: Once work on new functionality or bug fixes is completed, changes from a separate branch can be merged into the main branch through a process called merging. This allows you to integrate changes from different branches into the main project code.</p>
+<p>Rollback: Git allows you to return to previous states of a project if you need to undo changes or restore previous versions.</p>
+<h3 id="benefits-of-using-git">Benefits of using Git:</h3>
+<p>Ease of collaboration on a project for the development team. Git provides mechanisms for collaborative code editing, change tracking, and conflict resolution.</p>
+<p>Tracks the history of changes, making it easier to find and fix errors. With Git, developers can easily go back to previous versions of code and examine the change history to find the root cause of problems.</p>
+<p>The ability to experiment with new features without damaging the main code. Git allows you to create separate branches to develop new features or experimental changes, which can be integrated into the main project code after successful testing.</p>
+<p>Quick restoration of previous versions of the project. If necessary, developers can easily revert to previous versions of a project using Git, ensuring a secure and reliable development process.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Git is a powerful version control tool that greatly simplifies the software development process. Understanding its key principles and basic commands allows developers to effectively version control their projects and make them more reliable and stable. It&rsquo;s important to note that using Git requires practice and experience, but its basic principles are easy to understand and use in everyday development.</p>
+<h3 id="best-wishes-alexander-">Best wishes, Alexander 🙌</h3>
 
     </div>
 
@@ -959,7 +970,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F&amp;text=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F&amp;text=Version&#43;control.&#43;Git" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -976,7 +987,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F&amp;t=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F&amp;t=Version&#43;control.&#43;Git" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -995,7 +1006,7 @@
         
       
       <li>
-        <a href="mailto:?subject=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.%20Git&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Version%20control.%20Git&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1012,7 +1023,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F&amp;title=Version&#43;control.&#43;Git" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1029,7 +1040,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Version&#43;control.&#43;Git%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1046,7 +1057,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F&amp;title=%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5&#43;%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%D0%BC%D0%B8.&#43;Git" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fgit%2F&amp;title=Version&#43;control.&#43;Git" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1117,8 +1128,23 @@
       
     
     <li>
-      <a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
+      <a href="https://elibrary.ru/defaultx.asp" target="_blank" rel="noopener">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
       </a>
     </li>
   
@@ -1134,8 +1160,8 @@
       
     
     <li>
-      <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
-        <i class="fas fa-graduation-cap"></i>
+      <a href="https://orcid.org/" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
       </a>
     </li>
   
@@ -1151,40 +1177,76 @@
       
     
     <li>
-      <a href="https://github.com/gcushen" target="_blank" rel="noopener">
+      <a href="https://www.mendeley.com/search/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.academia.edu/" target="_blank" rel="noopener">
+        <i class="fab fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://arxiv.org/" target="_blank" rel="noopener">
+        <i class="fab fa-arxiv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/magister6239" target="_blank" rel="noopener">
         <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/uploads/resume.pdf" >
-        <i class="ai ai-cv"></i>
       </a>
     </li>
   

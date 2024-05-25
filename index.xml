@@ -33,6 +33,64 @@
     </item>
     
     <item>
+      <title>Previous week blog (4)</title>
+      <link>http://localhost:1313/post/previous-week-4/</link>
+      <pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/previous-week-4/</guid>
+      <description>&lt;h3 id=&#34;tests&#34;&gt;Tests&lt;/h3&gt;
+&lt;p&gt;Tests were taken in the following subjects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Story&lt;/li&gt;
+&lt;li&gt;Computer architecture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The essay was written in English.&lt;/p&gt;
+&lt;h3 id=&#34;computer-architecture&#34;&gt;Computer architecture&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Part 5 of the independent project was completed&lt;/li&gt;
+&lt;li&gt;Laboratory work 13 was passed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scientific programming languages</title>
+      <link>http://localhost:1313/post/scintific-programing-languages/</link>
+      <pubDate>Tue, 07 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/scintific-programing-languages/</guid>
+      <description>&lt;p&gt;Alexander Nozik, physicist and programmer, head of the Nuclear Physics Methods Laboratory at JetBrains Research, deputy head of the Laboratory of Methods of Nuclear Physics Experiments and master&amp;rsquo;s program at MIPT - about how to transfer scientific code to a modern stack and why it is difficult to introduce new tools into science. This article is based on a December 2021 episode of Skillbox&amp;rsquo;s People and Code podcast.&lt;/p&gt;
+&lt;h3 id=&#34;-alexander-tell-us-what-you-do-and-what-problems-you-solve&#34;&gt;— Alexander, tell us what you do and what problems you solve?&lt;/h3&gt;
+&lt;p&gt;— My main place of work is the Moscow Institute of Physics and Technology (MIPT), also known as Phystech. In addition, I work at the Institute of Nuclear Research of the Russian Academy of Sciences and JetBrains Research - this is a community of laboratories associated with JetBrains. The company supports laboratories and thus gathers the scientific community around itself.&lt;/p&gt;
+&lt;p&gt;I am engaged in neutrino physics, this is the main direction of my scientific activity. But in recent years I have been developing more software and libraries for scientific research.&lt;/p&gt;
+&lt;h3 id=&#34;-how-does-science-differ-from-commercial-development-in-terms-of-tasks-how-does-this-affect-the-choice-of-tools-and-programming-languages&#34;&gt;— How does science differ from commercial development in terms of tasks? How does this affect the choice of tools and programming languages?&lt;/h3&gt;
+&lt;p&gt;— Science has always been and remains “faster, higher, stronger” than other spheres. Scientists often solve the same problems as in commercial development, but on a much larger scale. Let&amp;rsquo;s remember the Internet protocol HTTP: it was originally created so that scientific centers could exchange large amounts of data. In one of the corridors of CERN there is even a sign: “The Internet was invented in this room.”&lt;/p&gt;
+&lt;p&gt;In particle acceleration experiments at the Large Hadron Collider, if memory serves, 25 GB of data are generated per minute. For commercial projects this is simply incomprehensible. We work with volumes of data that are not available anywhere else.&lt;/p&gt;
+&lt;p&gt;Data analysis and so-called Data Science have already become part of the industry. “So-called” because there is still no clear definition of what kind of science this is. Nevertheless, all the methodology and new tools are developed by scientists, because only they can operate with complex mathematical models.&lt;/p&gt;
+&lt;p&gt;An important feature of science is that there are very few professional programmers in it. Therefore, the tools that scientists use must not only be the most flexible and fastest, but also simple. Otherwise, non-programmer scientists will create such a thing that no one will be able to figure it out later. Actually, something similar has already happened in physics, and now the scientific community is solving this problem.&lt;/p&gt;
+&lt;p&gt;The fact is that physicists write computational code in C++, and then wrap it in Python code. And it seems to me that this approach has outlived its usefulness: in Python it is very difficult to maintain a large code base, and here the size of projects is growing precisely on the side of the users of the code - scientists. Therefore, such systems are slowly falling apart and over the past five years, engineers and scientists have been looking for more flexible and simpler alternatives.&lt;/p&gt;
+&lt;h3 id=&#34;-do-other-sciences-use-the-same-combination-of-languages&#34;&gt;— Do other sciences use the same combination of languages?&lt;/h3&gt;
+&lt;p&gt;— Yes, it’s about the same everywhere, but with a slight difference. For example, bioinformatics as a separate field has emerged relatively recently. Unlike physicists who had to “switch” to Python, they immediately began working in modern languages. But most sciences still use C, Fortran and C++ libraries, and write a Python add-on on top of them. And now there are the same problems with flexibility.&lt;/p&gt;
+&lt;p&gt;In addition to Python, in various fields of science they write or have tried to write in other languages.&lt;/p&gt;
+&lt;p&gt;R. It is used in statistics. It is a highly specialized language that is great for solving statistical problems. But often we need not only to receive data, but also to create a web service so that the user has access to this data. Writing it in R is not easy.&lt;/p&gt;
+&lt;p&gt;Julia This is quite an interesting language with many design features. Try it if you lack speed or flexibility in Python. However, Julia also has a drawback: its set of tools is still unstable.&lt;/p&gt;
+&lt;p&gt;Julia придумали как альтернативу Python и MATLAB. Последний до сих пор используют, но это проприетарная, «неживая» система. Как только вы выходите за рамки привычных задач, то сразу ощущаете его ограниченность.&lt;/p&gt;
+&lt;p&gt;Julia was invented as an alternative to Python and MATLAB. The latter is still used, but it is a proprietary, “non-living” system. As soon as you go beyond your usual tasks, you immediately feel its limitations.&lt;/p&gt;
+&lt;p&gt;Swift. They also tried to make Swift a universal language, but it never went beyond iOS. And then Kotlin appeared, which in syntax is very similar to Swift, but at the same time is suitable for solving a wider range of problems and allows you to work with libraries from Java, JavaScript and C.&lt;/p&gt;
+&lt;p&gt;Java. I used to program in Java - it&amp;rsquo;s a cool language that is often unfairly criticized. It was created for the enterprise, so there is an overly drawn-out “ceremony”: to build a simple application, you need to write a lot of additional code. Yes, this simplifies support and increases the stability of the application, but it greatly complicates the programming process itself.&lt;/p&gt;
+&lt;p&gt;Kotlin. Now I write a lot in Kotlin. It has the advantages of Java, but relieves the programmer of a good half of the “ceremonies”, and therefore, in my opinion, it has great prospects.
+What are the main problems in scientific IT and how are they trying to solve them?&lt;/p&gt;
+&lt;h3 id=&#34;-you-mentioned-that-there-was-a-lot-of-fancy-stuff-in-science-i-wonder-if-this-only-applies-to-fortran-and-c-libraries-or-something-else-and-what-are-the-main-problems-there&#34;&gt;— You mentioned that there was a lot of fancy stuff in science. I wonder if this only applies to Fortran and C++ libraries or something else? And what are the main problems there?&lt;/h3&gt;
+&lt;p&gt;“This is a very big problem that we will have to sort out for a long time.” The fact is that one day development turned into a separate professional field. 40 years ago, when programming was just in its infancy, physicists were the coolest programmers. They worked on huge machines the size of a closet, and everyone understood everything. But 15–20 years ago it turned out that software engineering is an independent engineering field.&lt;/p&gt;
+&lt;p&gt;Scientists fell far behind because they continued to develop software in the same style in which they did it on the antediluvian mainframes. They came up with wonderful algorithms, but did not think at all about code support, testing, CI/CD, and especially about architecture.&lt;/p&gt;
+&lt;p&gt;For example, data collection systems are completely unable to interact with each other. They were written by different programmers, who sometimes specifically made it so that the systems could not communicate with each other. If two experiments are performed on different systems, then the scientist will have to process their results separately. Moreover, it can take several years to study each system - they are so complex.&lt;/p&gt;
+&lt;p&gt;Due to the fact that science did not implement modern approaches to software design and did not use new tools, we have accumulated millions of legacy lines. There you can find good and even brilliant algorithms, but it will be almost impossible to understand them. To feel the pain, find a Fortran 77 program and try to understand what&amp;rsquo;s going on there.&lt;/p&gt;
+&lt;h4 id=&#34;for-reference-in-fortran-77-variable-name-length-is-limited-to-eight-characters-this-means-that-when-all-matching-variable-names-run-out-the-program-becomes-unreadable-number-letter-identifiers-are-used-with-which-the-code-only-becomes-more-confusing-but-most-programs-in-science-are-still-written-in-fortran&#34;&gt;For reference: in Fortran 77, variable name length is limited to eight characters. This means that when all matching variable names run out, the program becomes unreadable. Number-letter identifiers are used, with which the code only becomes more confusing. But most programs in science are still written in Fortran.&lt;/h4&gt;
+&lt;p&gt;Relatively recently, scientists realized that they need to invest in software engineering, pay attention to architecture and master modern tools, and not fence their bicycles. To my surprise, over the past two years, many groups of engineers have emerged that are purposefully promoting the modern approach in science.&lt;/p&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Blog with Jupyter Notebooks!</title>
       <link>http://localhost:1313/post/blog-with-jupyter/</link>
       <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
@@ -80,27 +138,79 @@
     </item>
     
     <item>
-      <title>Управление версиями. Git</title>
+      <title>Previous week blog (3)</title>
+      <link>http://localhost:1313/post/previous-week-3/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/previous-week-3/</guid>
+      <description>&lt;h3 id=&#34;test-papers&#34;&gt;Test papers&lt;/h3&gt;
+&lt;p&gt;Test papers were written in the following subjects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;English language&lt;/li&gt;
+&lt;li&gt;German&lt;/li&gt;
+&lt;li&gt;Mathematical analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;computer-architecture&#34;&gt;Computer architecture&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Part 4 of the independent project was completed&lt;/li&gt;
+&lt;li&gt;The 12th laboratory work was passed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Report preparation</title>
+      <link>http://localhost:1313/post/report/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/report/</guid>
+      <description>&lt;p&gt;Internship is an integral part of the educational process, during which a student can learn in more detail about his future profession and demonstrate the acquisition of skills and knowledge. After completing the practical training, a report must be written. In it, the student describes in detail all the actions carried out during the internship at an enterprise or institution.
+Features of compiling a report on industrial practice and its structure&lt;/p&gt;
+&lt;h3 id=&#34;features-of-compiling-a-report-on-industrial-practice-and-its-structure&#34;&gt;Features of compiling a report on industrial practice and its structure&lt;/h3&gt;
+&lt;p&gt;The practical training report is presented in the amount of 21-28 sheets of format A, which the student will submit to his supervisor. This is a more difficult option than introductory practice, because here it will not be enough to describe observations and what you saw in the work process. Here the student must conduct an analysis of the organization’s economic activities and demonstrate materials where these processes will be displayed.&lt;/p&gt;
+&lt;p&gt;The organization of the internship is the responsibility of the educational institution, but if desired, the student himself can choose the place of internship. Before starting, all students receive specially developed plans for practical training from the educational and scientific department. If a student chooses a place of internship from the list provided by the university, then the possibility of sending the student for practical training and assigning a supervisor from the organization to him is negotiated.&lt;/p&gt;
+&lt;p&gt;During the internship, the student must comply with the internal regime of the organization, work on an individual task plan, keep a practice diary and prepare a report. Within 5-7 days after the end of the practical training, the teacher must provide a report and a completed diary with the seal of the organization, as well as a reference from the supervisor.&lt;/p&gt;
+&lt;p&gt;If we talk about the practical training diary, then this is a special document that displays all the work done by the student in the organization. All actions of the trainee are recorded here and thus the teacher can track the activity. The report on practical training must also indicate the objectives of the course, what tasks were assigned to the student and the results of the implementation, as well as the methods that were used to complete the tasks.
+Preparation of a report on production practice&lt;/p&gt;
+&lt;h3 id=&#34;preparing-a-report-on-industrial-practice&#34;&gt;Preparing a report on industrial practice&lt;/h3&gt;
+&lt;p&gt;According to the structure of the industrial practice report, it contains several parts. Here is a list of required sections:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; - A title page containing the student’s data, information about the place of internship and educational institution, as well as the year and city of internship.
+ - Certificate of practical training, which is filled out on the organization’s letterhead and contains the seal and signature of the manager.
+ - Introductory part of the report. Here the student must describe the place of internship, analyze its activities, assess the market position, show the management system, etc. Be sure to indicate the goals and objectives of the practice in this part.
+ - The content or main part of the report has several sections with a total volume of 10-15 pages. Section 1 contains basic information about industrial practice; section 2 indicates the deadlines; section 3 presents the individual task that was assigned to the student for the period of practical training; section 4 contains all the trainee’s actions by date (the so-called practice diary); Section 5 summarizes the practice and draws relevant conclusions.
+ - Feedback from the practice manager from the organization is the main part of the entire report. Here the head of the organization writes about how the trainee managed to prove himself.
+ - List of used literature, documentation, regulations and applications.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A description of the activities of an organization or enterprise is a mandatory part of the practice report. The topic to be studied, production problems are also indicated and ways to solve them are formed, what methods will help to conduct the research, and the theory necessary for a full study of production.&lt;/p&gt;
+&lt;p&gt;Regarding applications, this is also an important part of the internship report, because it is from them that the teacher can clearly evaluate the work done by the student during the internship. This includes documents the trainee worked with, reports, instructions, calculations, technical maps, etc. Can be supplemented with photographs from the internship site.&lt;/p&gt;
+&lt;p&gt;Separately, it is worth dwelling on the list of literature used, which includes methodological and theoretical instructions, other sources that were used during the period of internship and writing the report. The list is compiled in accordance with the rules and requirements of GOST, which is a single criterion for the preparation of all scientific works. Of course, each educational institution provides its own guidelines, which must also be followed when preparing the report. But they differ only in some details; in general, everything happens in accordance with generally accepted requirements.&lt;/p&gt;
+&lt;p&gt;The text of the report is written on one side of a sheet of white A4 paper, font – Times New Roman, 14 point, line spacing is 1.5. The page number is placed in the middle of the top margin of the sheet; pages of text material should be numbered in Arabic numerals, observing continuous numbering throughout the document. The margins must have indents: 20 mm below and above, 25 mm on the left, 10 mm on the right.&lt;/p&gt;
+&lt;p&gt;For all students, completing an internship is not only an opportunity to show theoretical knowledge in real life, but also an opportunity to get a job, see how the process works, what responsibilities are assigned. If you need examples to document your practice, you can, of course, find them on the Internet, but it is better to contact the specialists of the Internet portal “I Passed Everything!” for this. They will help not only with the design, but also with the preparation of the report itself.&lt;/p&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Version control. Git</title>
       <link>http://localhost:1313/post/git/</link>
       <pubDate>Thu, 30 Mar 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/git/</guid>
-      <description>&lt;p&gt;Управление версиями является неотъемлемой частью разработки программного обеспечения. Это процесс отслеживания изменений в коде, координации работы нескольких разработчиков и восстановления предыдущих версий проекта при необходимости. Одним из наиболее популярных инструментов управления версиями является Git. В этом блоге мы рассмотрим основы работы с Git и его практические аспекты.&lt;/p&gt;
-&lt;h3 id=&#34;что-такое-git&#34;&gt;Что такое Git?&lt;/h3&gt;
-&lt;p&gt;Git - это распределенная система управления версиями, разработанная Линусом Торвальдсом. Она позволяет разработчикам эффективно управлять изменениями в коде, создавать отдельные ветки разработки, сливать их и отслеживать историю изменений проекта.&lt;/p&gt;
-&lt;h3 id=&#34;основные-принципы-git&#34;&gt;Основные принципы Git:&lt;/h3&gt;
-&lt;p&gt;Репозиторий (Repository): Git хранит все данные проекта в специальном хранилище, называемом репозиторием. Репозиторий содержит всю историю изменений проекта, включая файлы, коммиты и ветки.&lt;/p&gt;
-&lt;p&gt;Коммиты (Commits): Коммиты представляют собой снимки состояния проекта в определенный момент времени. Каждый коммит содержит информацию о внесенных изменениях и авторе.&lt;/p&gt;
-&lt;p&gt;Ветвление (Branching): Ветвление позволяет создавать отдельные ветки разработки, в которых можно вносить изменения независимо от основной ветки (обычно это ветка master). Это помогает изолировать новые функции или исправления от основного кода проекта.&lt;/p&gt;
-&lt;p&gt;Слияние (Merging): После завершения работы над новой функциональностью или исправлением ошибок изменения из отдельной ветки могут быть объединены с основной веткой через процесс, называемый слиянием. Это позволяет интегрировать изменения из разных веток в основной код проекта.&lt;/p&gt;
-&lt;p&gt;Откат (Rollback): Git позволяет возвращаться к предыдущим состояниям проекта, если возникла необходимость отмены изменений или восстановления предыдущих версий.&lt;/p&gt;
-&lt;h3 id=&#34;польза-от-использования-git&#34;&gt;Польза от использования Git:&lt;/h3&gt;
-&lt;p&gt;Удобство совместной работы над проектом для команды разработчиков. Git обеспечивает механизмы для совместного редактирования кода, отслеживания изменений и разрешения конфликтов.&lt;/p&gt;
-&lt;p&gt;Отслеживание истории изменений, что упрощает поиск и исправление ошибок. Благодаря Git разработчики могут легко вернуться к предыдущим версиям кода и изучить историю изменений для поиска причин возникновения проблем.&lt;/p&gt;
-&lt;p&gt;Возможность экспериментировать с новыми функциями, не повреждая основной код. Git позволяет создавать отдельные ветки для разработки новых функций или экспериментальных изменений, которые могут быть интегрированы в основной код проекта после успешного тестирования.&lt;/p&gt;
-&lt;p&gt;Быстрое восстановление предыдущих версий проекта. В случае необходимости разработчики могут легко вернуться к предыдущим версиям проекта с помощью Git, что обеспечивает безопасность и надежность процесса разработки.&lt;/p&gt;
-&lt;h3 id=&#34;заключение&#34;&gt;Заключение&lt;/h3&gt;
-&lt;p&gt;Git является мощным инструментом управления версиями, который существенно облегчает процесс разработки программного обеспечения. Понимание его ключевых принципов и основных команд позволяет разработчикам эффективно управлять версиями своих проектов и сделать их более надежными и устойчивыми. Важно отметить, что использование Git требует практики и опыта, но его основные принципы легко понять и использовать в повседневной разработке.&lt;/p&gt;
-&lt;h3 id=&#34;с-наилучшими-пожеланиями-александр-&#34;&gt;С наилучшими пожеланиями, Александр 🙌&lt;/h3&gt;
+      <description>&lt;p&gt;Version control is an integral part of software development. It is the process of tracking code changes, coordinating the work of multiple developers, and restoring previous versions of the project when necessary. One of the most popular version control tools is Git. In this blog, we&amp;rsquo;ll look at the basics of Git and its practical aspects.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-git&#34;&gt;What is Git?&lt;/h3&gt;
+&lt;p&gt;Git is a distributed version control system developed by Linus Torvalds. It allows developers to effectively manage changes to the code, create separate development branches, merge them, and track the history of project changes.&lt;/p&gt;
+&lt;h3 id=&#34;basic-principles-of-git&#34;&gt;Basic principles of Git:&lt;/h3&gt;
+&lt;p&gt;Repository: Git stores all project data in a special repository called a repository. The repository contains the entire history of changes to the project, including files, commits and branches.&lt;/p&gt;
+&lt;p&gt;Commits: Commits are snapshots of the state of a project at a specific point in time. Each commit contains information about the changes made and the author.&lt;/p&gt;
+&lt;p&gt;Branching: Branching allows you to create separate development branches in which you can make changes independent of the main branch (usually the master branch). This helps isolate new features or fixes from the main project code.&lt;/p&gt;
+&lt;p&gt;Merging: Once work on new functionality or bug fixes is completed, changes from a separate branch can be merged into the main branch through a process called merging. This allows you to integrate changes from different branches into the main project code.&lt;/p&gt;
+&lt;p&gt;Rollback: Git allows you to return to previous states of a project if you need to undo changes or restore previous versions.&lt;/p&gt;
+&lt;h3 id=&#34;benefits-of-using-git&#34;&gt;Benefits of using Git:&lt;/h3&gt;
+&lt;p&gt;Ease of collaboration on a project for the development team. Git provides mechanisms for collaborative code editing, change tracking, and conflict resolution.&lt;/p&gt;
+&lt;p&gt;Tracks the history of changes, making it easier to find and fix errors. With Git, developers can easily go back to previous versions of code and examine the change history to find the root cause of problems.&lt;/p&gt;
+&lt;p&gt;The ability to experiment with new features without damaging the main code. Git allows you to create separate branches to develop new features or experimental changes, which can be integrated into the main project code after successful testing.&lt;/p&gt;
+&lt;p&gt;Quick restoration of previous versions of the project. If necessary, developers can easily revert to previous versions of a project using Git, ensuring a secure and reliable development process.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Git is a powerful version control tool that greatly simplifies the software development process. Understanding its key principles and basic commands allows developers to effectively version control their projects and make them more reliable and stable. It&amp;rsquo;s important to note that using Git requires practice and experience, but its basic principles are easy to understand and use in everyday development.&lt;/p&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
 </description>
     </item>
     
@@ -109,93 +219,111 @@
       <link>http://localhost:1313/post/markdown/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/markdown/</guid>
-      <description>&lt;p&gt;Markdown — удобочитаемый язык разметки, который прозрачно конвертируется в HTML. Его можно открывать и изменять в любом редакторе текста. Широко используется для написания документаций и README-файлов.&lt;/p&gt;
-&lt;p&gt;Вы можете встретить Markdown в .md или .markdown файлах. Давайте посмотрим на пример одного из таких:&lt;/p&gt;
-&lt;h1 id=&#34;дока&#34;&gt;Дока&lt;/h1&gt;
-&lt;p&gt;Дока — это &lt;strong&gt;добрая&lt;/strong&gt; энциклопедия для веб-разработчиков.
-Вы можете &lt;a href=&#34;https://doka.guide&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;открыть её&lt;/a&gt; в своём браузере.&lt;/p&gt;
-&lt;h2 id=&#34;преимущества&#34;&gt;Преимущества&lt;/h2&gt;
+      <description>&lt;p&gt;Markdown is a human-readable markup language that converts transparently to HTML. It can be opened and modified in any text editor. Widely used for writing documentation and README files.&lt;/p&gt;
+&lt;p&gt;You may encounter Markdown in .md or .markdown files. Let&amp;rsquo;s look at an example of one of these:&lt;/p&gt;
+&lt;p&gt;#Doc&lt;/p&gt;
+&lt;p&gt;Doka is a &lt;strong&gt;good&lt;/strong&gt; encyclopedia for web developers.
+You can &lt;a href=&#34;https://doka.guide&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;open it&lt;/a&gt; in your browser.&lt;/p&gt;
+&lt;h2 id=&#34;advantages&#34;&gt;Advantages&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Понятный материал;&lt;/li&gt;
-&lt;li&gt;Нескучные объяснения;&lt;/li&gt;
-&lt;li&gt;Удобный поиск.&lt;/li&gt;
+&lt;li&gt;Clear material;&lt;/li&gt;
+&lt;li&gt;Fun explanations;&lt;/li&gt;
+&lt;li&gt;Convenient search.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Он содержит базовые элементы, которые можно найти почти в любом README.md:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;заголовок первого уровня для названия;
-выделение жирным шрифтом важных частей в описании;
-ссылка с понятным текстом;
-заголовок второго уровня для подпунктов;
-маркированный список для перечисления преимуществ.
+&lt;p&gt;It contains the basic elements that can be found in almost any README.md:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; first level heading for the title;
+ highlighting important parts in the description in bold;
+ link with clear text;
+ second level heading for subparagraphs;
+ bulleted list to list benefits.
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Несмотря на то, что Markdown достаточно удобно читать в исходном виде, его часто переводят в HTML. Результат конвертации находится ниже.&lt;/p&gt;
-&lt;h1 id=&#34;синтаксис&#34;&gt;Синтаксис&lt;/h1&gt;
-&lt;h2 id=&#34;параграф&#34;&gt;Параграф&lt;/h2&gt;
-&lt;p&gt;Параграф — это одна или несколько подряд идущих строчек текста, отделённых одной или несколькими пустыми строчками. Если строка содержит только пробелы или табы, то она всё равно считается пустой.&lt;/p&gt;
-&lt;p&gt;Подряд идущие строчки будут склеены в одну, если не добавить жёсткий перенос. Существует несколько способов, как это можно сделать:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;добавить два (или больше) пробелов в конце строки &amp;lt;пробел&amp;gt;&amp;lt;пробел&amp;gt;;
-добавить обратную косую черту в конце строки \;
-добавить HTML-тег переноса строки &amp;lt;br&amp;gt;.
+&lt;p&gt;Although Markdown is easy to read in its native form, it is often translated into HTML. The conversion result is below.&lt;/p&gt;
+&lt;h1 id=&#34;syntax&#34;&gt;Syntax&lt;/h1&gt;
+&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;
+&lt;p&gt;A paragraph is one or more consecutive lines of text separated by one or more blank lines. If a line contains only spaces or tabs, it is still considered empty.&lt;/p&gt;
+&lt;p&gt;Consecutive lines will be glued into one if you do not add a hard transfer. There are several ways how this can be done:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;add two (or more) spaces at the end of the line 
+&amp;lt;space&amp;gt;&amp;lt;space&amp;gt;;
+    add a backslash at the end of the line \;
+    add an HTML line break tag &amp;lt;br&amp;gt;.
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Привет,
-мир!&lt;/p&gt;
-&lt;p&gt;Привет,&amp;lt;пробел&amp;gt;&amp;lt;пробел&amp;gt;
-пробел!&lt;/p&gt;
-&lt;p&gt;Привет,&lt;br&gt;
-косая черта!&lt;/p&gt;
-&lt;p&gt;Привет,&lt;br&gt;
-тег бр-р-р!&lt;/p&gt;
-&lt;p&gt;Markdown предлагает два стиля написания заголовков: через решётки и через подчёркивания. Можно использовать до шести уровней заголовков, но подчёркивания позволяют создавать только первые два.
+&lt;p&gt;Hello,
+world!&lt;/p&gt;
+&lt;p&gt;Hello &lt;space&gt;&lt;space&gt;
+space!&lt;/p&gt;
+&lt;p&gt;Hello,&lt;br&gt;
+slash!&lt;/p&gt;
+&lt;p&gt;Hello&lt;br&gt;
+tag brrr!&lt;/p&gt;
+&lt;p&gt;Markdown offers two heading styles: hash marks and underscores. You can use up to six levels of headings, but underlines only allow you to create the first two.
 🤓&lt;/p&gt;
-&lt;p&gt;В англоязычных источниках для обозначения стилей написания заголовков используются термины Atx-style (для решёток) и Setext-style (для подчёркиваний).
-Решётки (Atx-style)&lt;/p&gt;
-&lt;p&gt;Для того чтобы выделить заголовок, необходимо поставить от 1 до 6 решёток и пробел в самом начале строки. Уровень заголовка зависит только от количества решёток.&lt;/p&gt;
-&lt;h1 id=&#34;заголовок-1-уровня&#34;&gt;Заголовок 1 уровня&lt;/h1&gt;
-&lt;h2 id=&#34;заголовок-2-уровня&#34;&gt;Заголовок 2 уровня&lt;/h2&gt;
-&lt;h3 id=&#34;заголовок-3-уровня&#34;&gt;Заголовок 3 уровня&lt;/h3&gt;
-&lt;h4 id=&#34;заголовок-4-уровня&#34;&gt;Заголовок 4 уровня&lt;/h4&gt;
-&lt;h5 id=&#34;заголовок-5-уровня&#34;&gt;Заголовок 5 уровня&lt;/h5&gt;
-&lt;h6 id=&#34;заголовок-6-уровня&#34;&gt;Заголовок 6 уровня&lt;/h6&gt;
-&lt;h3 id=&#34;с-наилучшими-пожеланиями-александр-&#34;&gt;С наилучшими пожеланиями, Александр 🙌&lt;/h3&gt;
+&lt;p&gt;In English-language sources, the terms Atx-style (for hash marks) and Setext-style (for underlines) are used to denote heading writing styles.
+Grilles (Atx-style)&lt;/p&gt;
+&lt;p&gt;In order to highlight the title, you need to put from 1 to 6 hash marks and a space at the very beginning of the line. The title level depends only on the number of hash marks.&lt;/p&gt;
+&lt;h1 id=&#34;level-1-header&#34;&gt;Level 1 header&lt;/h1&gt;
+&lt;h2 id=&#34;level-2-header&#34;&gt;Level 2 header&lt;/h2&gt;
+&lt;h3 id=&#34;level-3-header&#34;&gt;Level 3 header&lt;/h3&gt;
+&lt;h4 id=&#34;level-4-header&#34;&gt;Level 4 header&lt;/h4&gt;
+&lt;h5 id=&#34;level-5-header&#34;&gt;Level 5 header&lt;/h5&gt;
+&lt;h6 id=&#34;level-6-header&#34;&gt;Level 6 header&lt;/h6&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
 </description>
     </item>
     
     <item>
-      <title>Блог о событиях за прошедшую неделю</title>
-      <link>http://localhost:1313/post/previous-week/</link>
-      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/previous-week/</guid>
-      <description>&lt;p&gt;Приветствую всех читателей блога! Давайте вместе вспомним самые интересные события, произошедшие за последние семь дней.&lt;/p&gt;
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-&lt;h3 id=&#34;искусственный-интеллекта&#34;&gt;Искусственный интеллекта&lt;/h3&gt;
-&lt;p&gt;Прошедшая неделя была богата на новости в области искусственного интеллекта. Исследователи из Массачусетса в Кембридже объявили о создании новой модели глубокого обучения, которая показывает потенциал в решении сложных задач распознавания изображений. Эта модель обещает значительные прорывы в сфере компьютерного зрения.&lt;/p&gt;
-&lt;h3 id=&#34;запуск-нового-космического-аппарата&#34;&gt;Запуск нового космического аппарата&lt;/h3&gt;
-&lt;p&gt;В прошедшую среду состоялся успешный запуск нового космического аппарата ЛунаРей. Этот аппарат предназначен для изучения лунной поверхности. Запуск прошел без каких-либо инцидентов, и теперь аппарат отправлен на свою орбиту для выполнения своих задач.&lt;/p&gt;
-&lt;h3 id=&#34;открытие-нового-центра-исследований-в-области-кибербезопасности&#34;&gt;Открытие нового центра исследований в области кибербезопасности&lt;/h3&gt;
-&lt;p&gt;В пятницу открылся новый центр исследований в области кибербезопасности Цифровой Щит. Этот центр ставит своей целью разработку новых методов обнаружения и борьбы с киберугрозами. Он обещает стать ключевым игроком в борьбе с киберугрозами и разработке инновационных методов защиты в сетевой сфере.&lt;/p&gt;
-&lt;h3 id=&#34;завершение-глобальной-онлайн-конференции&#34;&gt;Завершение глобальной онлайн-конференции&lt;/h3&gt;
-&lt;p&gt;На этой неделе завершилась глобальная онлайн-конференция &amp;ldquo;Исскуственный интеллект: Новые горизонты&amp;rdquo;, посвященная теме &amp;ldquo;Будущее автономных систем&amp;rdquo;. Конференция собрала ведущих специалистов из разных стран для обсуждения актуальных вопросов и перспективных направлений развития в данной области.&lt;/p&gt;
-&lt;p&gt;Это были только некоторые из ключевых событий, произошедших за прошедшую неделю. Следите за обновлениями блога, чтобы быть в курсе последних новостей и тенденций в мире технологий и науки.&lt;/p&gt;
-&lt;h3 id=&#34;с-наилучшими-пожеланиями-александр--&#34;&gt;С наилучшими пожеланиями, Александр  🙌&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Блог о событиях за прошедшую неделю (2)</title>
+      <title>Previous week (2)</title>
       <link>http://localhost:1313/post/previous-week-2/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/previous-week-2/</guid>
-      <description>&lt;h3 id=&#34;контрольные-работы&#34;&gt;Контрольные работы&lt;/h3&gt;
-&lt;p&gt;Были написаны контрольные работы по следующим предметам:&lt;/p&gt;
+      <description>&lt;h3 id=&#34;test-papers&#34;&gt;Test papers&lt;/h3&gt;
+&lt;p&gt;Test papers were written in the following subjects:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Аналитическая геометрия&lt;/li&gt;
-&lt;li&gt;Дискретная математика&lt;/li&gt;
+&lt;li&gt;Analytic geometry&lt;/li&gt;
+&lt;li&gt;Discrete Math&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;компьютерная-архитектура&#34;&gt;Компьютерная архитектура&lt;/h3&gt;
+&lt;h3 id=&#34;computer-architecture&#34;&gt;Computer architecture&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Была сдана 3 часть самостоятельного проекта&lt;/li&gt;
-&lt;li&gt;Была сдана 9 лабораторная работа&lt;/li&gt;
+&lt;li&gt;Part 3 of the independent project was completed&lt;/li&gt;
+&lt;li&gt;The 9th laboratory work was passed&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;с-наилучшими-пожеланиями-александр--&#34;&gt;С наилучшими пожеланиями, Александр  🙌&lt;/h3&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Previous week blog</title>
+      <link>http://localhost:1313/post/previous-week/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/previous-week/</guid>
+      <description>&lt;p&gt;Greetings to all blog readers! Let&amp;rsquo;s remember together the most interesting events that have happened over the past seven days.&lt;/p&gt;
+&lt;h3 id=&#34;artificial-intelligence&#34;&gt;Artificial Intelligence&lt;/h3&gt;
+&lt;p&gt;The past week was rich in news in the field of artificial intelligence. Researchers at UMass Cambridge have announced the creation of a new deep learning model that shows potential for solving complex image recognition problems. This model promises significant breakthroughs in computer vision.&lt;/p&gt;
+&lt;h3 id=&#34;launch-of-a-new-spacecraft&#34;&gt;Launch of a new spacecraft&lt;/h3&gt;
+&lt;p&gt;Last Wednesday, the new LunaRey spacecraft was successfully launched. This device is designed to study the lunar surface. The launch took place without any incident, and the device is now sent into its orbit to carry out its tasks.&lt;/p&gt;
+&lt;h3 id=&#34;opening-of-a-new-center-for-cybersecurity-research&#34;&gt;Opening of a new center for cybersecurity research&lt;/h3&gt;
+&lt;p&gt;A new cybersecurity research center, Digital Shield, opened Friday. This center aims to develop new methods for detecting and combating cyber threats. It promises to become a key player in the fight against cyber threats and the development of innovative methods of protection in the network sphere.&lt;/p&gt;
+&lt;h3 id=&#34;completion-of-the-global-online-conference&#34;&gt;Completion of the global online conference&lt;/h3&gt;
+&lt;p&gt;This week, the global online conference “Artificial Intelligence: New Horizons,” dedicated to the topic “The Future of Autonomous Systems,” ended. The conference brought together leading experts from different countries to discuss current issues and promising areas of development in this area.&lt;/p&gt;
+&lt;p&gt;These were just some of the key events that took place over the past week. Follow the blog to stay updated with the latest news and trends in the world of technology and science.&lt;/p&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nitshe game</title>
+      <link>http://localhost:1313/project/nitshe-game/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/nitshe-game/</guid>
+      <description>&lt;p&gt;A simple Python game on the theme of the philosopher Friedrich Nietzsche. The software architecture is very bad (there is none), and therefore the code is terrible. The game was made as a philosophy project because code purity was not important.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Discord bot</title>
+      <link>http://localhost:1313/project/discord-bot/</link>
+      <pubDate>Sat, 26 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/discord-bot/</guid>
+      <description>&lt;p&gt;A simple bot written in python as an experiment. It has little functionality, but it can do things that other bots can’t.&lt;/p&gt;
 </description>
     </item>
     
@@ -383,7 +511,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-462785139&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-641892753&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -393,7 +521,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-462785139&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-641892753&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -813,27 +941,6 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Example Project</title>
-      <link>http://localhost:1313/project/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/example/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>http://localhost:1313/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/external-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>An example journal article</title>
       <link>http://localhost:1313/publication/journal-article/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
@@ -868,6 +975,72 @@ $$&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software architecture</title>
+      <link>http://localhost:1313/post/software-architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/software-architecture/</guid>
+      <description>&lt;h3 id=&#34;what-is-software-architecture-for&#34;&gt;What is software architecture for?&lt;/h3&gt;
+&lt;p&gt;Software architecture is the foundation of IT product development. Developers write code to create a program. Strings are combined into functions, functions are combined into classes, classes are combined into modules. The result is a finished program.&lt;/p&gt;
+&lt;p&gt;To reduce the time required to create a complex product, developers at the beginning of work create a general plan for the future software with the main blocks and ways to connect them. Then they detail it, working out the requirements and characteristics. This is how information is obtained to build software components.&lt;/p&gt;
+&lt;p&gt;First, due to manageability, the architect uses individual components and modules responsible for individual functions to organize software development and support.&lt;/p&gt;
+&lt;p&gt;Also, the clear architecture of the software product makes it easy to support. Even if developers are not familiar with the details of the system, they will be able to quickly and easily navigate the code, making the team&amp;rsquo;s work easier.&lt;/p&gt;
+&lt;p&gt;With the help of software architecture, you can easily modify, expand and scale the project. Quickly add new elements, increase functionality and productivity, and use resources efficiently.&lt;/p&gt;
+&lt;p&gt;Software architecture, including monolithic architecture, allows for reuse. Components are used multiple times in different parts of the system. The main benefit is to reduce the number of errors and reduce development time. It also includes safety measures to ensure protection.&lt;/p&gt;
+&lt;p&gt;Basic principles of software architecture&lt;/p&gt;
+&lt;h3 id=&#34;principles-that-are-taken-into-account-during-design&#34;&gt;Principles that are taken into account during design.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Flexibility. Build not for years, but with the possibility of making changes. Consider how the program may change to meet modern needs, and add flexibility to easily support changes.&lt;/li&gt;
+&lt;li&gt;Openness/closedness. Software entities are closed for modification and open for expansion.&lt;/li&gt;
+&lt;li&gt;Risk reduction and analysis model. It is important to use tools such as UML to capture requirements and design decisions. You should not formalize the model in such a way that it is impossible to easily adapt and repeat the design.&lt;/li&gt;
+&lt;li&gt;Stability - organizing dependencies from more stable components to less stable ones.&lt;/li&gt;
+&lt;li&gt;Uniqueness - avoiding code duplication.&lt;/li&gt;
+&lt;li&gt;Minimal knowledge. Each module knows only about its neighbors to reduce interdependence and increase isolation.&lt;/li&gt;
+&lt;li&gt;Sharing of responsibilities. 1 element - 1 reason for change (for a clear division of responsibilities).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By following these architectural principles, you can design a system that is extensible, flexible, and maintainable.&lt;/p&gt;
+&lt;h3 id=&#34;types-of-architectural-styles&#34;&gt;Types of architectural styles&lt;/h3&gt;
+&lt;p&gt;Architectural styles are high-level strategies. They represent an abstract structure for systems.&lt;/p&gt;
+&lt;p&gt;8 main styles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Multi-layered.&lt;/li&gt;
+&lt;li&gt;Component-oriented.&lt;/li&gt;
+&lt;li&gt;Service-oriented.&lt;/li&gt;
+&lt;li&gt;Distributed system.&lt;/li&gt;
+&lt;li&gt;Subject-oriented.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Translator&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Parallelism.&lt;/li&gt;
+&lt;li&gt;Data-driven.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Multilayer is the most common. A typical example is a layered style with 3 layers: presentation layer, business logic and data storage. Pros: easy to understand, test and support. The downside is the appearance of performance overhead.&lt;/p&gt;
+&lt;p&gt;Component-oriented separates functionality into layers within a single system, organized as reusable and loosely coupled components. Advantages: Flexibility, Maintainability, Reusability. Disadvantage: the components are difficult to manage.&lt;/p&gt;
+&lt;p&gt;Service-oriented for developing software as a set of interacting services over a network. Pros: Loose coupling, flexibility, and reusability. Disadvantages: complexity, network dependence.&lt;/p&gt;
+&lt;p&gt;Distributed system. Components on networked computers pass messages to communicate and coordinate actions to achieve a goal. Advantages: general access, resistance to errors and failures, scalability. Disadvantages: complexity, network dependence.&lt;/p&gt;
+&lt;p&gt;Domain-oriented - creation of software abstractions (domain models). It is characterized by limited connections, integrity and interconnection. Disadvantage: Requires deep understanding and experience.&lt;/p&gt;
+&lt;p&gt;The “translator” determines how sentences are evaluated. For each symbol, a terminal or non-terminal style is created. It is highly flexible and easy to debug. Disadvantage: Requires more resources.&lt;/p&gt;
+&lt;p&gt;In the parallelism style, multiple independent tasks are executed at the same time. Parallelism improves performance, which is especially important for multiprocessor systems. The downside is the complex mutual blocking.&lt;/p&gt;
+&lt;p&gt;Data-centric architecture. The style focuses on organizing and transforming data. Suitable for large volumes of data and solving complex problems. Ensures correct data sequencing, integrity and reliability. Disadvantages include possible scalability issues.&lt;/p&gt;
+&lt;h3 id=&#34;architectural-patterns&#34;&gt;Architectural Patterns&lt;/h3&gt;
+&lt;p&gt;These are subject-specific and specific elements for a particular module or problem. A structured solution that describes the organization of components and interactions. Patterns are similar to software design patterns, but more abstract.&lt;/p&gt;
+&lt;p&gt;Each architectural style has its own patterns. Multilayer has a multi-layer pattern and “Clean Architecture”. The first divides the system into a certain number of layers, each with its own area of responsibility. The “Clean Architecture” pattern emphasizes the separation of functionality in the system, organizing software into concentric layers, in the central one - the subject area, in a circle - specific layers for the application, the internal ones influence the external ones. So the changes have almost no effect on the business logic.&lt;/p&gt;
+&lt;p&gt;There are 3 patterns in the component-oriented style. Object-oriented pattern is a paradigm with objects containing data in the form of fields (attributes) and code in the form of procedures (methods). Facilitates the design of complex systems, their implementation and support. &amp;ldquo;Microkernel&amp;rdquo; to separate the microkernel from the extended client-specific functionality. This way you can easily and quickly expand the system without changing the main code. Plugin pattern - adds new functionality using modules or plugins, integrating them through a standard interface to expand and customize the application.&lt;/p&gt;
+&lt;p&gt;Service-oriented style patterns:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SOA. A software project is a set of individual services that are used in systems.&lt;/li&gt;
+&lt;li&gt;Broker. Coordinates the communication of system components through an intermediary.&lt;/li&gt;
+&lt;li&gt;Microservice pattern for architecture. An application project looks like a collection of small services. Each service communicates through lightweight mechanisms and operates in its own process.&lt;/li&gt;
+&lt;li&gt;Serverless pattern. Applications are created and run without servers in cloud environments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The distributed system style has 2 patterns:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data space. Evenly distributes resources and services across servers, which avoids a single point of failure.&lt;/li&gt;
+&lt;li&gt;Peer-to-peer network. Here, each participant acts as a client. Nodes and service exchange data without a central server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By understanding styles and patterns, a specialist will be able to design reliable, scalable and maintainable systems.&lt;/p&gt;
+&lt;h3 id=&#34;best-wishes-alexander-&#34;&gt;Best wishes, Alexander 🙌&lt;/h3&gt;
 </description>
     </item>
     
